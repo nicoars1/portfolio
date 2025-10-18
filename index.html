@@ -20,69 +20,229 @@
     <title>Nico's Portfolio</title>
   </head>
   <body>
-    <!-- NAVBAR -->
     <nav>
-			<div class="left">
-				<a href="/">Nicolás Arsegot</a>
-			</div>
+      <div class="left">
+        <a href="/">Nicolás Arsegot</a>
+      </div>
 
-			<div class="right">
-				<a href="http://github.com" target="_blank" rel="noopenernoreferrer">
-					<i class="fa-brands fa-github"></i>
-					<span>Github</span>
-				</a>
+      <div class="right">
+        <a
+          href="http://github.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-github"></i>
+          <span>Github</span>
+        </a>
 
-				<a href="http://linkedin.com" target="_blank" rel="noopenernoreferrer">
-					<i class="fa-brands fa-linkedin"></i>
-					<span>Linkedin</span>
-				</a>
+        <a
+          href="http://linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+          <span>Linkedin</span>
+        </a>
 
-				<a href="mailto:nicolas.arsegot.gustavo@gmail.com">
-					<i class="fa-solid fa-envelope"></i>
-					<span>Email</span>
-				</a>
-			</div>
-
-		</nav>
+        <a href="mailto:nicolas.arsegot.gustavo@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Email</span>
+        </a>
+      </div>
+    </nav>
 
     <main>
-      <!-- SECTION 1: HERO -->
       <section class="hero-section">
-				<div class="text">
-					<h2>Hi, I'm Nico 👋</h2>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, nostrum odio. Est enim, modi commodi accusantium tempore distinctio deleniti magnam similique nesciunt odit reprehenderit unde veritatis esse ex ea repellat eos ut, fuga minima aliquid neque? Facere fugit ullam minima illum molestiae iusto optio, harum illo inventore numquam, voluptatibus aspernatur?</p>
+        <div class="text">
+          <h2>Hi, I'm Nico 👋</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam,
+            nostrum odio. Est enim, modi commodi accusantium tempore distinctio
+            deleniti magnam similique nesciunt odit reprehenderit unde veritatis
+            esse ex ea repellat eos ut, fuga minima aliquid neque? Facere fugit
+            ullam minima illum molestiae iusto optio, harum illo inventore
+            numquam, voluptatibus aspernatur?
+          </p>
 
-					<div class="links">
-						<a href="#skills">
-							<i class="fa-solid fa-code"></i>
-							<span>Skills</span>
-						</a>
+          <div class="links">
+            <a href="#skills">
+              <i class="fa-solid fa-code"></i>
+              <span>Skills</span>
+            </a>
 
-						<a href="#projects">
-							<i class="fa-solid fa-pen"></i>
-							<span>Projects</span>
-						</a>
+            <a href="#projects">
+              <i class="fa-solid fa-pen"></i>
+              <span>Projects</span>
+            </a>
 
-						<a href="#contact">
-							<i class="fa-solid fa-envelope"></i>
-							<span>Contact</span>
-						</a>
-					</div>
-				</div>
+            <a href="#contact">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Contact</span>
+            </a>
+          </div>
+        </div>
 
-				<div class="headshot">
-					<img src="images/hero-headshot.webp" alt="nicolas arsegot headshot">
-				</div>
-			</section>
+        <div class="headshot">
+          <img
+            src="images/hero-headshot.webp"
+            alt="nicolas arsegot headshot"
+          />
+        </div>
+      </section>
 
-      <!-- SECTION 2: SKILLS -->
-      <section id="skills"></section>
+      <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <div class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, quo!
+          Corporis quaerat odit quibusdam sequi voluptatibus nostrum quam,
+          cumque unde.
+        </div>
 
-      <!-- SECTION 1:  TESTIMONY - PROJECTS -->
-      <section id="projects"></section>
+        <div class="cells">
+          <div class="cell">
+            <img src="images/html-logo.webp" alt="html logo" />
+            <span>HTML</span>
+          </div>
 
-      <!-- SECTION 1: CONTACT  -->
-      <section id="contact"></section>
+          <div class="cell">
+            <img src="images/css-logo.webp" alt="css logo" />
+            <span>CSS</span>
+          </div>
+
+          <div class="cell">
+            <img src="images/javascript-logo.webp" alt="javascript logo" />
+            <span>JavaScript</span>
+          </div>
+
+          <div class="cell">
+            <img src="images/python-logo.webp" alt="python logo" />
+            <span>Python</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+
+        <div class="project-container">
+          
+          <div class="project">
+            <img src="images/projects/700x425.webp" alt="AI chat project" />
+            <h3>AI Chat project</h3>
+            <div class="technologies">
+              <div class="tech">
+                <img src="images/html-logo.webp" alt="html logo" />
+                <span>HTML</span>
+              </div>
+              <div class="tech">
+                <img src="images/css-logo.webp" alt="css logo" />
+                <span>CSS</span>
+              </div>
+              <div class="tech">
+                <img src="images/javascript-logo.webp" alt="javascript logo" />
+                <span>JavaScript</span>
+              </div>
+            </div>
+            
+            <p class="project-description">
+              Chat application with artificial intelligence inspired by
+              ChatGPT. Developed with vanilla web technologies and Workers for
+              the backend.
+            </p>
+            
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">Demo</a>
+              <a
+                href="https://github.com/nicoars1/ai-chat-project"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Code</a
+              >
+            </div>
+          </div>
+
+          <div class="project">
+            <img src="images/project1.webp" alt="AI chat project" />
+            <h3>Otro Proyecto</h3>
+            <div class="technologies">
+              <div class="tech">
+                <img src="images/python-logo.webp" alt="python logo" />
+                <span>Python</span>
+              </div>
+            </div>
+            <p class="project-description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">Demo</a>
+              <a
+                href="https://github.com/nicoars1/ai-chat-project"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Code</a
+              >
+            </div>
+          </div>
+
+          <div class="project">
+            <img src="images/project1.webp" alt="AI chat project" />
+            <h3>Un Proyecto Más</h3>
+            <div class="technologies">
+              <div class="tech">
+                <img src="images/html-logo.webp" alt="html logo" />
+                <span>HTML</span>
+              </div>
+              <div class="tech">
+                <img src="images/css-logo.webp" alt="css logo" />
+                <span>CSS</span>
+              </div>
+            </div>
+            <p class="project-description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id
+              labore eaque, cupiditate error ipsa excepturi a magnam ipsum,
+              autem beatae quaerat commodi. Quas, aliquid?
+            </p>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">Demo</a>
+              <a
+                href="https://github.com/nicoars1/ai-chat-project"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Code</a
+              >
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <h2>Contact</h2>
+
+        <div class="group">
+          <div class="text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
+            omnis nihil debitis qui dolores corporis voluptatem est aspernatur
+            laboriosam, officiis, harum iusto culpa fuga, tempora nisi alias
+            beatae praesentium perferendis eaque. Ducimus consequatur veniam
+            magnam nostrum ut, earum eaque? Obcaecati architecto illo
+            voluptatem quasi unde laboriosam facilis enim, ducimus itaque.
+          </div>
+
+          <form>
+            <label for="name">Name</label>
+            <input type="text" />
+
+            <label for="email">Email</label>
+            <input type="text" />
+
+            <label for="message">Message</label>
+            <textarea id="message" cols="30" rows="10"></textarea>
+
+            <button type="submit">Send message</button>
+          </form>
+        </div>
+      </section>
     </main>
   </body>
 </html>
