@@ -20,69 +20,252 @@
     <title>Nico's Portfolio</title>
   </head>
   <body>
-    <!-- NAVBAR -->
     <nav>
-			<div class="left">
-				<a href="/">Nicolás Arsegot</a>
-			</div>
+      <div class="left">
+        <a href="/">Nicolás Arsegot</a>
+      </div>
 
-			<div class="right">
-				<a href="http://github.com" target="_blank" rel="noopenernoreferrer">
-					<i class="fa-brands fa-github"></i>
-					<span>Github</span>
-				</a>
+      <div class="right">
+        <a
+          href="https://github.com/nicoars1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-github"></i>
+          <span>Github</span>
+        </a>
 
-				<a href="http://linkedin.com" target="_blank" rel="noopenernoreferrer">
-					<i class="fa-brands fa-linkedin"></i>
-					<span>Linkedin</span>
-				</a>
+        <a
+          href="https://www.linkedin.com/in/nicolas-arsegot/" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-linkedin"></i>
+          <span>Linkedin</span>
+        </a>
 
-				<a href="mailto:nicolas.arsegot.gustavo@gmail.com">
-					<i class="fa-solid fa-envelope"></i>
-					<span>Email</span>
-				</a>
-			</div>
+        <a href="mailto:nicolas.arsegot.gustavo@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Email</span>
+        </a>
 
-		</nav>
+        <a href="#" id="themeChanger">
+          <i class="fa-solid fa-moon"></i>
+          <span></span>
+        </a>
+      </div>
+    </nav>
 
     <main>
-      <!-- SECTION 1: HERO -->
       <section class="hero-section">
-				<div class="text">
-					<h2>Hi, I'm Nico 👋</h2>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, nostrum odio. Est enim, modi commodi accusantium tempore distinctio deleniti magnam similique nesciunt odit reprehenderit unde veritatis esse ex ea repellat eos ut, fuga minima aliquid neque? Facere fugit ullam minima illum molestiae iusto optio, harum illo inventore numquam, voluptatibus aspernatur?</p>
+        <div class="text">
+          <h2>Hi, I'm Nico 👋</h2>
+          <p>
+            I am a passionate web developer focused on creating clean, efficient, and user-friendly digital experiences. I thrive on problem-solving and am constantly exploring new technologies to enhance my skill set. My approach is that of a lifelong learner, always eager to tackle complex challenges and turn innovative ideas into tangible, real-world solutions. I am driven by a curiosity for how things work and am looking for opportunities to grow.
+          </p>
 
-					<div class="links">
-						<a href="#skills">
-							<i class="fa-solid fa-code"></i>
-							<span>Skills</span>
-						</a>
+          <div class="links">
+            <a href="#skills">
+              <i class="fa-solid fa-code"></i>
+              <span>Skills</span>
+            </a>
 
-						<a href="#projects">
-							<i class="fa-solid fa-pen"></i>
-							<span>Projects</span>
-						</a>
+            <a href="#projects">
+              <i class="fa-solid fa-pen"></i>
+              <span>Projects</span>
+            </a>
 
-						<a href="#contact">
-							<i class="fa-solid fa-envelope"></i>
-							<span>Contact</span>
-						</a>
-					</div>
-				</div>
+            <a href="#contact">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Contact</span>
+            </a>
+          </div>
+        </div>
 
-				<div class="headshot">
-					<img src="images/hero-headshot.webp" alt="nicolas arsegot headshot">
-				</div>
-			</section>
+        <div class="headshot">
+          <img
+            src="images/hero-headshot.webp"
+            alt="nicolas arsegot headshot"
+          />
+        </div>
+      </section>
 
-      <!-- SECTION 2: SKILLS -->
-      <section id="skills"></section>
+      <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <div class="text">
+          My technical toolkit is focused on building complete web applications. I use HTML, CSS, and JavaScript for dynamic frontends, and Python for backend logic.
+        </div>
 
-      <!-- SECTION 1:  TESTIMONY - PROJECTS -->
-      <section id="projects"></section>
+        <div class="cells">
+          <div class="cell">
+            <img src="images/html-logo.webp" alt="html logo" />
+            <span>HTML</span>
+          </div>
 
-      <!-- SECTION 1: CONTACT  -->
-      <section id="contact"></section>
+          <div class="cell">
+            <img src="images/css-logo.webp" alt="css logo" />
+            <span>CSS</span>
+          </div>
+
+          <div class="cell">
+            <img src="images/javascript-logo.webp" alt="javascript logo" />
+            <span>JavaScript</span>
+          </div>
+
+          <div class="cell">
+            <img src="images/python-logo.webp" alt="python logo" />
+            <span>Python</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills-section">
+        <h2>Soft Skills</h2>
+        <div class="text">
+          Beyond the code, I am a self-taught problem solver. I thrive in team environments by using effective communication to ensure we all succeed together.
+        </div>
+
+        <div class="cells">
+          <div class="cell">
+            <i class="fa-solid fa-comment"></i>
+            <span>Effective comunication</span>
+          </div>
+
+          <div class="cell">
+            <i class="fa-solid fa-gears"></i>
+            <span>Problems resolution</span>
+          </div>
+
+          <div class="cell">
+            <i class="fa-solid fa-lightbulb"></i>
+            <span>Self-taught</span>
+          </div>
+
+          <div class="cell">
+            <i class="fa-solid fa-user-plus"></i>
+            <span>Team work</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+
+        <div class="project-container">
+          
+          <div class="project">
+            <img src="images/projects/700x425.webp" alt="AI chat project"  class="projectImg"/>
+            <h3>AI Chat project</h3>
+            <div class="technologies">
+              <div class="tech">
+                <img src="images/html-logo.webp" alt="html logo"/>
+                <span>HTML</span>
+              </div>
+              <div class="tech">
+                <img src="images/css-logo.webp" alt="css logo"/>
+                <span>CSS</span>
+              </div>
+              <div class="tech">
+                <img src="images/javascript-logo.webp" alt="javascript logo"/>
+                <span>JavaScript</span>
+              </div>
+            </div>
+            
+            <p class="project-description">
+              Chat application with artificial intelligence inspired by
+              ChatGPT. Developed with vanilla web technologies and Workers for
+              the backend.
+            </p>
+            
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">Demo</a>
+              <a
+                href="https://github.com/nicoars1/ai-chat-project"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Code</a
+              >
+            </div>
+          </div>
+
+          <div class="project">
+            <img src="images/project1.webp" alt="AI chat project"  class="projectImg"/>
+            <h3>Otro Proyecto</h3>
+            <div class="technologies">
+              <div class="tech">
+                <img src="images/python-logo.webp" alt="python logo" />
+                <span>Python</span>
+              </div>
+            </div>
+            <p class="project-description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">Demo</a>
+              <a
+                href="https://github.com/nicoars1/ai-chat-project"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Code</a
+              >
+            </div>
+          </div>
+
+          <div class="project">
+            <img src="images/project1.webp" alt="AI chat project"  class="projectImg"/>
+            <h3>Un Proyecto Más</h3>
+            <div class="technologies">
+              <div class="tech">
+                <img src="images/html-logo.webp" alt="html logo" />
+                <span>HTML</span>
+              </div>
+              <div class="tech">
+                <img src="images/css-logo.webp" alt="css logo" />
+                <span>CSS</span>
+              </div>
+            </div>
+            <p class="project-description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id
+              labore eaque, cupiditate error ipsa excepturi a magnam ipsum,
+              autem beatae quaerat commodi. Quas, aliquid?
+            </p>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener noreferrer">Demo</a>
+              <a
+                href="https://github.com/nicoars1/ai-chat-project"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Code</a
+              >
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <h2>Contact</h2>
+
+        <div class="group">
+          <div class="text">
+            Have a project in mind or a job opportunity? I'd love to hear from you. Fill out the form, and I'll get back to you as soon as possible.
+          </div>
+
+          <form action="https://formsubmit.co/nicolas.arsegot.gustavo@gmail.com" method="POST" >
+            <label>Name</label>
+            <input type="text" name="name"/>
+
+            <label for="email">Email</label>
+            <input type="email" name="email"/>
+
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+            <button type="submit">Send message</button>
+
+            <input type="hidden" name="_next" value="#">
+            <input type="hidden" name="_captcha" value="false">
+          </form>
+        </div>
+      </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
