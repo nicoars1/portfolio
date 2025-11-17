@@ -5,7 +5,6 @@
   --primary-light: #09f;
   --card-bg-color: #ffffff;
   --border-color: #d3d3d3;
-  /* Sombra más sutil */
   --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
@@ -34,8 +33,14 @@ body {
   --primary-light: #3498db;
   --card-bg-color: #2b2d31;
   --border-color: #444;
-  /* Sombra más oscura para dar presencia */
   --card-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.disabled {
+    pointer-events: none;
+    color: gray;
+    text-decoration: none;
+    background-color: rgb(224, 224, 224);
 }
 
 a {
@@ -195,7 +200,7 @@ nav .right a span {
   font-size: 18px;
 }
 
-/* SECTION 3: PROJECTS (ESTILO PROFESIONAL) */
+/* SECTION 3: PROJECTS*/
 .projects-section {
   padding: 0 50px;
   margin-bottom: 100px;
@@ -218,36 +223,29 @@ nav .right a span {
   flex-shrink: 1;
   display: flex;
   flex-direction: column;
-  /* Se eliminó el borde para un look más limpio */
+
   background-color: var(--card-bg-color);
   box-shadow: var(--card-shadow);
-  border-radius: 16px; /* Más redondeado */
-  padding: 16px; /* Más "aire" */
+  border-radius: 16px; 
+  padding: 16px; 
   transition: background-color 0.3s ease-in-out, 
               box-shadow 0.3s ease-in-out,
-              transform 0.3s ease-in-out; /* Añadida transición de transform */
+              transform 0.3s ease-in-out; 
 }
 
-/* Efecto de levantar al pasar el mouse (MODO CLARO) */
 .project:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Efecto de "Glow" al pasar el mouse (MODO OSCURO) */
 .dark .project:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 20px 0px var(--link-color);
+  box-shadow: 0 0 20px 0px #41404094;
 }
 
 .project .projectImg {
-  width: 100%;
-  height: 250px; /* Altura reducida */
-  object-fit: contain;
-  /* Fondo que coincide con el fondo de la página */
-  background-color: var(--background-color); 
-  border-radius: 8px; /* Esquinas más suaves para la imagen */
-  transition: background-color 0.3s ease-in-out;
+    width: 100%;
+    height: auto;
 }
 
 .project h3 {
