@@ -417,7 +417,7 @@ nav .right a span {
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 740px) {
   nav {
     padding: 0 20px;
   }
@@ -457,9 +457,14 @@ nav .right a span {
   .contact-section .group {
     flex-direction: column;
   }
+    .hero-section .headshot img {
+    border-radius: 100% !important;
+    width: 350px !important;
+    height: 350px !important;
+  }
 }
 
-@media (min-width: 340px) and (max-width: 500px) {
+@media (max-width: 500px) {
   nav .left a {
     font-size: 16px;
   }
@@ -478,5 +483,28 @@ nav .right a span {
     color: var(--text-color);
     padding: 0;
     border-radius: 0;
+  }
+  .project-container {
+    gap: 15px; /* un poco más compacto */
+  }
+    
+  .project {
+    flex-basis: 100% !important; /* que ocupen todo el ancho */
+    max-width: 100%;             /* evita overflow */
+  }
+
+  .imgCont {
+    width: 100%;
+  }
+
+  .project .projectImg {
+    width: 100%;
+    height: auto;
+  }
+  
+  .hero-section .headshot img {
+    border-radius: 100% !important;
+    width: 350px !important;
+    height: 350px !important;
   }
 }
