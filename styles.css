@@ -446,9 +446,18 @@ nav .right a span {
   .skills-section .cells .cell span {
     font-size: 16px;
   }
-
+  
   .projects-section {
     padding: 0 20px;
+  }
+
+  .project {
+    flex-basis: 100% !important; 
+    max-width: 100%;            
+  }
+
+  .imgCont {
+    width: 100%;
   }
 
   .contact-section {
@@ -485,7 +494,7 @@ nav .right a span {
     border-radius: 0;
   }
   .project-container {
-    gap: 15px; /* un poco más compacto */
+    gap: 15px;
   }
     
   .project {
