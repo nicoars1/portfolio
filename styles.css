@@ -77,6 +77,43 @@ nav .right a span {
 }
 
 /* SECTION 1: HERO */
+.gradient-underline {
+  display: inline-block;
+  position: relative;
+}
+
+.gradient-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 3px;
+  width: 100%;
+
+  background: linear-gradient(
+    90deg,
+    #000,
+    #fff,
+    #000
+  );
+
+  background-size: 200% 100%;
+  animation: smooth-move 20s ease-in-out infinite;
+  border-radius: 3px;
+}
+
+@keyframes smooth-move {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
 .hero-section {
   display: flex;
   justify-content: space-between;
@@ -89,9 +126,16 @@ nav .right a span {
 .hero-section .text {
   flex: 5;
 }
-.hero-section .text h2 {
+.hero-section .text h1 {
+  padding-bottom: 0px;
+  margin-bottom: 30px;
   font-size: 45px;
 }
+
+.hero-section .text h2 {
+  font-size: 25px;
+}
+
 .hero-section .text p {
   margin-top: 15px;
 }
@@ -117,8 +161,10 @@ nav .right a span {
   justify-content: right;
 }
 .hero-section .headshot img {
-  border-radius: 50%;
-  width: 400px;
+  width: 450px;
+  height: 450px;
+  object-fit: cover;   /* mantiene proporción sin deformar */
+  border-radius: 100%;
 }
 
 /* EMOJI ANIMATION */
@@ -246,6 +292,11 @@ nav .right a span {
 .project .projectImg {
     width: 100%;
     height: auto;
+}
+
+.imgCont {
+  width: 600px;
+  height: fit-content
 }
 
 .project h3 {
