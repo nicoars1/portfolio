@@ -22,11 +22,12 @@
   <body>
     <nav>
       <div class="left">
-        <a href="/">Nicolás Arsegot</a>
+        <a href="/" aria-label="home button">Nicolás Arsegot</a>
       </div>
 
       <div class="right">
         <a
+          aria-label="github button"
           href="https://github.com/nicoars1"
           target="_blank"
           rel="noopener noreferrer"
@@ -36,6 +37,7 @@
         </a>
 
         <a
+          aria-label="linkedin button"
           href="https://www.linkedin.com/in/nicolas-arsegot/"
           target="_blank"
           rel="noopener noreferrer"
@@ -44,12 +46,12 @@
           <span>Linkedin</span>
         </a>
 
-        <a href="mailto:nicolas.arsegot.gustavo@gmail.com">
+        <a href="mailto:nicolas.arsegot.gustavo@gmail.com" aria-label="email button">
           <i class="fa-solid fa-envelope"></i>
           <span>Email</span>
         </a>
 
-        <a href="#" id="themeChanger">
+        <a href="#" id="themeChanger" aria-label="theme changer button" aria-pressed="false">
           <i class="fa-solid fa-moon"></i>
           <span></span>
         </a>
@@ -72,17 +74,17 @@
           </p>
 
           <div class="links">
-            <a href="#skills">
+            <a href="#skills" aria-label="go to skill section button">
               <i class="fa-solid fa-code"></i>
               <span>Skills</span>
             </a>
 
-            <a href="#projects">
+            <a href="#projects" aria-label="go to project section button">
               <i class="fa-solid fa-pen"></i>
               <span>Projects</span>
             </a>
 
-            <a href="#contact">
+            <a href="#contact" aria-label="go to contact section button">
               <i class="fa-solid fa-envelope"></i>
               <span>Contact</span>
             </a>
@@ -132,8 +134,9 @@
             </p>
 
             <div class="project-links">
-              <a href="https://nicoaichat.netlify.app/" target="_blank" rel="noopener noreferrer">Demo</a>
+              <a href="https://nicoaichat.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="go to demo project button">Demo</a>
               <a
+                aria-label="go to project repo button"
                 href="https://github.com/nicoars1/ai-chat-project"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -175,8 +178,9 @@
             </p>
 
             <div class="project-links">
-              <a href="https://jade-hamster-d0d006.netlify.app/" target="_blank" rel="noopener noreferrer" >Demo</a>
+              <a href="https://jade-hamster-d0d006.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="go to demo project button">Demo</a>
               <a
+                aria-label="go to project repo button"
                 href="https://github.com/nicoars1/Podometer-app"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -208,12 +212,13 @@
             </p>
             -->
             <div class="project-links">
-              <a href="#" target="_blank" rel="noopener noreferrer" class="disabled">Demo</a>
+              <a href="#" target="_blank" rel="noopener noreferrer" class="disabled" aria-label="go to demo project button">Demo</a>
               <a
                 href="https://github.com/nicoars1/ai-chat-project"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="disabled"
+                aria-label="go to project repo button"
                 >Code</a
               >
             </div>
@@ -254,7 +259,7 @@
         </div>
       </section>
 
-      <section id="skills" class="skills-section">
+      <section id="softSkills" class="skills-section">
         <h2>Soft Skills</h2>
         <div class="text">
           Beyond the code, I am a self-taught problem solver. I thrive in team
@@ -299,11 +304,11 @@
             action="https://formsubmit.co/nicolas.arsegot.gustavo@gmail.com"
             method="POST"
           >
-            <label>Name</label>
-            <input type="text" name="name" />
+            <label for="name">Name</label>
+            <input type="text" name="name" name="name"/>
 
             <label for="email">Email</label>
-            <input type="email" name="email" />
+            <input type="email" name="email" email="email"/>
 
             <label for="message">Message</label>
             <textarea
