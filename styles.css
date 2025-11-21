@@ -402,9 +402,20 @@ nav .right a span {
   filter: brightness(90%);
 }
 
+@media (max-width: 1600px) {
+  .imgCont {
+    width: 100%;
+  }
+}
+
 @media (max-width: 850px) {
   .hero-section .text h2 {
     font-size: 30px;
+  }
+
+  .hero-section .headshot img {
+    padding: 20px;
+    
   }
 }
 
