@@ -151,7 +151,7 @@ nav .right a span {
 }
 .hero-section .text .links a:hover {
   background-color: var(--primary-light);
-  color: #fff;
+  color: #ffffff;
 }
 .hero-section .headshot {
   flex: 2;
@@ -506,5 +506,16 @@ nav .right a span {
     border-radius: 100% !important;
     width: 350px !important;
     height: 350px !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero-section .headshot img {
+    width: 230px !important;
+    height: 230px !important;
+  }
+
+  .gradient-underline {
+    margin-right: 20px;
   }
 }

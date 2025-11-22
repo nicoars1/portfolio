@@ -17,6 +17,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <noscript><link rel="stylesheet" href="/css/all.min.css"></noscript>
     <title>Nico's Portfolio</title>
   </head>
   <body>
@@ -74,14 +75,14 @@
           </p>
 
           <div class="links">
-            <a href="#skills" aria-label="go to skill section button">
-              <i class="fa-solid fa-code"></i>
-              <span>Skills</span>
-            </a>
-
             <a href="#projects" aria-label="go to project section button">
               <i class="fa-solid fa-pen"></i>
               <span>Projects</span>
+            </a>
+
+            <a href="#skills" aria-label="go to skill section button">
+              <i class="fa-solid fa-code"></i>
+              <span>Skills</span>
             </a>
 
             <a href="#contact" aria-label="go to contact section button">
@@ -92,7 +93,7 @@
         </div>
 
         <div class="headshot">
-          <img src="images/hero-headshot.webp" alt="nicolas arsegot headshot"/>
+          <img fetchpriority="high" src="images/hero-headshot.webp" alt="nicolas arsegot headshot"/>
         </div>
       </section>
 
@@ -305,10 +306,10 @@
             method="POST"
           >
             <label for="name">Name</label>
-            <input type="text" name="name" name="name"/>
+            <input type="text" name="name" aria-label="name"/>
 
             <label for="email">Email</label>
-            <input type="email" name="email" email="email"/>
+            <input type="email" name="email" aria-label="email"/>
 
             <label for="message">Message</label>
             <textarea
