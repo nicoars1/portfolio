@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,6 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <noscript><link rel="stylesheet" href="/css/all.min.css"></noscript>
+    <link rel="icon" href="/images/portfolio.ico" type="image/x-icon">
     <title>Nico's Portfolio</title>
   </head>
   <body>
@@ -301,32 +303,36 @@
             possible.
           </div>
 
-          <form
-            action="https://formsubmit.co/nicolas.arsegot.gustavo@gmail.com"
-            method="POST"
-          >
-            <label for="name">Name</label>
-            <input type="text" name="name" aria-label="name"/>
+          <form action="https://formsubmit.co/nicolas.arsegot.gustavo@gmail.com" method="POST">
+            <label for="name">Name:</label>
+            <input id="name" type="text" name="name" aria-label="name" required autocomplete="name">
 
-            <label for="email">Email</label>
-            <input type="email" name="email" aria-label="email"/>
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" aria-label="email" required autocomplete="email">
 
-            <label for="message">Message</label>
+            <label for="message">Message:</label>
             <textarea
               name="message"
               id="message"
               cols="30"
               rows="10"
+              required
             ></textarea>
 
-            <button type="submit">Send message</button>
+            <button 
+            type="submit" >Send message</button>
+            
 
-            <input type="hidden" name="_next" value="#" />
-            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="#">
+            <input type="hidden" name="_captcha" value="false">
+            <div id="recaptcha-container">
+            <div class="g-recaptcha" data-sitekey="6LdZWBcsAAAAAA1ZuIdOyF2qi32r1CDMTpgo_d6e"></div>
+            </div>
           </form>
         </div>
       </section>
     </main>
     <script src="script.js"></script>
+     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </body>
 </html>
