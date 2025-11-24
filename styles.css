@@ -499,7 +499,12 @@ nav .right a span {
 
   .hero-section .text {
     width: 300px;
+
+    .gradient-underline {
+      width: 300px;
+    }
   }
+
   .project-container {
     gap: 15px;
     padding: 10px
