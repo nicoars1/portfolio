@@ -1,10 +1,30 @@
-let themeBtn = document.getElementById("themeChanger");
+const themeBtn = document.getElementById("themeChanger");
+const savedTheme = localStorage.getItem("theme");
 
-themeBtn.addEventListener("click", () => {
+if (savedTheme === "dark") {
+  document.documentElement.classList.add("dark");
+}
 
-    document.body.classList.toggle("dark");
-    const isDark = document.body.classList.contains("dark");
-    themeBtn.setAttribute("aria-pressed", isDark);
+// Guardar el tema en localstorage
+themeBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  document.documentElement.classList.toggle("dark");
+
+  const isDark = document.documentElement.classList.contains("dark");
+
+  themeBtn.setAttribute("aria-pressed", isDark);
+
+  localStorage.setItem("theme", isDark ? "dark" : "light")
+});
+
+
+// Permite hacer click al boton con el enter por cuestiones de accesibilidad
+themeBtn.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" || e.key === " ") {
+    e.preventDefault();
+    themeBtn.click();
+  }
 });
 
 if ("serviceWorker" in navigator) {

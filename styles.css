@@ -107,6 +107,10 @@ nav .right a:nth-last-child(2):hover {
   border: 1px solid var(--text-color);
 }
 
+#themeChanger {
+  cursor: pointer;
+}
+
 /* SECTION 1: HERO */
 .gradient-underline {
   display: inline-block;
